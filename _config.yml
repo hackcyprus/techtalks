@@ -1,0 +1,7 @@
+safe: true
+lsi: false
+pygments: true
+permalink: /:title/
+name: "Hack Cyprus"
+description: "Hack Cyprus Tech Talks"
+url: http://techtalks.hackcyprus.com
