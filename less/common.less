@@ -28,7 +28,7 @@ a.logo.inverse {
     text-shadow: none;
 }
 
-p.chasm {
+div.chasm {
     text-align: center;
     display: block;
     width: 66px;
@@ -38,7 +38,8 @@ p.chasm {
     border-bottom: 2px solid #dedede;
 }
 
-button.btn {
+.btn {
+    display: inline-block;
     height: 47px;
     line-height: 47px;
     width: 185px;
@@ -50,4 +51,9 @@ button.btn {
     font-size: 1.125em;
     padding: 0;
     margin: 0;
+    text-decoration: none;
+
+    &:hover {
+        background-color: lighten(@logo-hover, 5%);
+    }
 }
