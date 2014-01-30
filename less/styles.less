@@ -1,3 +1,6 @@
+@import "normalize";
+@import "common";
+
 @import "vars";
 @import "mixins";
 
@@ -69,36 +72,33 @@ header {
 div.speakers {
     .clearfix;
 
-
-
     div.speaker {
         float: left;
         width: 33.3333333%;
         text-align: center;
 
         h3 {
-            margin-bottom: 0;
             font-size: 1em;
         }
 
         h4 {
             margin: 0;
-            margin-top: -10px;
             font-weight: normal;
+
+            a {
+                display: block;
+                color: @dark-gray;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
         }
 
         img.pic {
             width: 115px;
             .border-radius(100px);
             margin-bottom: 0.5em;
-        }
-
-        img.flag {
-            width: 32px;
-            display: inline-block;
-            position: relative;
-            top: 10px;
-            margin-left: 5px;
         }
     }
 }
@@ -145,7 +145,7 @@ div.chasm {
     position: relative;
     margin: 3em auto;
     height: 0;
-    border-bottom: 2px solid #dedede;
+    border-bottom: 2px solid @light-gray;
 }
 
 .btn {
